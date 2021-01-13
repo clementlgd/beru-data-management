@@ -33,12 +33,12 @@ module.exports = {
         // Add any options here
       },
     },
-    {
-      resolve: "gatsby-plugin-mixpanel",
-      options: {
-        apiToken: "cbc2a2bf8fed02dba64300d86b3fa8ae", // required
-      },
-    },
+    // {
+    //   resolve: "gatsby-plugin-mixpanel",
+    //   options: {
+    //     apiToken: "cbc2a2bf8fed02dba64300d86b3fa8ae", // required
+    //   },
+    // },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
