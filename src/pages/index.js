@@ -1,13 +1,20 @@
 import React from "react"
 import { Link } from "gatsby"
+import styled from "styled-components"
 
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 
+const Title = styled.h1`
+  font-size: 20px;
+  color: red;
+`
+
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
+    <Title>Titre</Title>
     <h1>Hello</h1>
     <p>Welcome to your new Gatsby site.</p>
     <p>Now go build something great.</p>
