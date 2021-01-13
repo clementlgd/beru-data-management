@@ -36,7 +36,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-mixpanel",
       options: {
-        apiToken: "8b6f8f0326616eeb90a5d4e701d4d55e", // required
+        apiToken: "cbc2a2bf8fed02dba64300d86b3fa8ae", // required
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
