@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 
 import CtaPurchase from "./CtaPurchase"
+import Checkout from "../checkout"
 
 const Section = styled.section`
   height: 600px;
@@ -44,6 +45,7 @@ const CtaBanner = () => {
         la documentation sur la bière du mois.
       </SubTitle>
       <CtaPurchase />
+      <Checkout />
     </Section>
   )
 }
