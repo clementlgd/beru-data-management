@@ -3,7 +3,7 @@ import { MixpanelContext } from "../../tracking"
 import { Link } from "gatsby"
 import styled from "styled-components"
 
-import background from "../../images/NotreHistoire.jpg"
+import background from "../../images/img2.jpg"
 
 const Section = styled.section`
   background-image: url(${background});

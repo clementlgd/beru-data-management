@@ -5,9 +5,9 @@ import styled from "styled-components"
 
 import ImgCard from "./ImgCard"
 
-import Caroussel1 from "../../images/Caroussel_1.jpg"
-import Caroussel2 from "../../images/Caroussel_2.jpg"
-import Caroussel3 from "../../images/Caroussel_3.jpg"
+import Caroussel1 from "../../images/img3.jpg"
+import Caroussel2 from "../../images/img4.jpg"
+import Caroussel3 from "../../images/img5.jpg"
 
 const Section = styled.section`
   height: 100vh;

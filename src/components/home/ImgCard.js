@@ -9,8 +9,13 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
 `
-const ImageCarousel = styled.img`
+const ImageContainer = styled.div`
   width: 100%;
+`
+const ImageCarousel = styled.img`
+  width: 350px;
+  height: 200px;
+  object-fit: cover;
 `
 const Title = styled.h3`
   font-size: 33px;
@@ -25,7 +30,9 @@ const Description = styled.p`
 const ImgCard = ({ imgSrc, title, description }) => {
   return (
     <Container>
+      {/* <ImageContainer> */}
       <ImageCarousel src={imgSrc} alt="Icon wich describe WhenToCop?" />
+      {/* </ImageContainer> */}
       <Title>{title}</Title>
       <Description>{description}</Description>
     </Container>

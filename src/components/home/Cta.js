@@ -23,7 +23,7 @@ const Cta = () => {
 
   return (
     <Button
-      href="https://www.whentocop.fr/"
+      href="https://u6f60w1xnsf.typeform.com/to/MzjOpujo"
       target="_blank"
       onClick={() => mixpanel.track("cta button")}
     >
