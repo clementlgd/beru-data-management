@@ -16,11 +16,13 @@ const Section = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
+  padding: 0 50px;
 `
 const Container = styled.div``
 const Title = styled.h1`
   font-size: 60px;
   color: #fff;
+  font-family: "Anton";
 `
 const SubTitle = styled.p`
   font-size: 20px;

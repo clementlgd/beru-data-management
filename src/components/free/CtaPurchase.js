@@ -1,4 +1,4 @@
-import React, { useContext } from "react"
+import React, { useContext, useEffect } from "react"
 import styled from "styled-components"
 import { MixpanelContext } from "../../tracking"
 
@@ -20,18 +20,18 @@ const Button = styled.a`
   }
 `
 
-const Cta = () => {
+const CtaPurchase = () => {
   const mixpanel = useContext(MixpanelContext)
 
   return (
     <Button
       href="https://u6f60w1xnsf.typeform.com/to/MzjOpujo"
       target="_blank"
-      onClick={() => mixpanel.track("cta free content button")}
+      onClick={() => mixpanel.track("cta purchase button")}
     >
-      Essayer Biru gratuitement
+      Je m’abonne à Biru
     </Button>
   )
 }
 
-export default Cta
+export default CtaPurchase

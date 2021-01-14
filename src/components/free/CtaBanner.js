@@ -1,9 +1,7 @@
-import React, { useContext, useEffect } from "react"
-import { MixpanelContext } from "../../tracking"
-import { Link } from "gatsby"
+import React from "react"
 import styled from "styled-components"
 
-import Cta from "./Cta"
+import CtaPurchase from "./CtaPurchase"
 
 const Section = styled.section`
   height: 600px;
@@ -37,11 +35,15 @@ const SubTitle = styled.p`
 const CtaBanner = () => {
   return (
     <Section>
-      <Title>Alors ? Vous avez envie de goûter à la vraie bière ? 🍺</Title>
+      <Title>
+        Et si vous receviez une nouvelle bière à tester tous les mois pour
+        15€/mois ? 🍺
+      </Title>
       <SubTitle>
-        Commandez dès maintenant votre première box de bière gratuitement !
+        Contient : un pack de 6 bières, un décapsuleur inédit, des snacks et de
+        la documentation sur la bière du mois.
       </SubTitle>
-      <Cta />
+      <CtaPurchase />
     </Section>
   )
 }

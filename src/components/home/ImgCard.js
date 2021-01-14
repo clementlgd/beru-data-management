@@ -9,9 +9,6 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
 `
-const ImageContainer = styled.div`
-  width: 100%;
-`
 const ImageCarousel = styled.img`
   width: 350px;
   height: 200px;
@@ -20,6 +17,7 @@ const ImageCarousel = styled.img`
 const Title = styled.h3`
   font-size: 33px;
   text-align: center;
+  font-family: "Anton";
 `
 const Description = styled.p`
   font-family: sans-serif;
@@ -30,9 +28,7 @@ const Description = styled.p`
 const ImgCard = ({ imgSrc, title, description }) => {
   return (
     <Container>
-      {/* <ImageContainer> */}
       <ImageCarousel src={imgSrc} alt="Icon wich describe WhenToCop?" />
-      {/* </ImageContainer> */}
       <Title>{title}</Title>
       <Description>{description}</Description>
     </Container>

@@ -7,6 +7,7 @@ const Container = styled.div`
 `
 const Title = styled.h3`
   font-weight: bold;
+  font-family: "Anton";
 `
 const Description = styled.p`
   font-family: sans-serif;

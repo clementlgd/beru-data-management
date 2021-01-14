@@ -33,6 +33,13 @@ module.exports = {
         // Add any options here
       },
     },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "fonts",
+        path: `${__dirname}/src/css/main.css`,
+      },
+    },
     // {
     //   resolve: "gatsby-plugin-mixpanel",
     //   options: {

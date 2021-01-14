@@ -30,6 +30,7 @@ const RightContainer = styled.section`
 const Title = styled.h1`
   font-size: 60px;
   color: #000;
+  font-family: "Anton";
 `
 const SubTitle = styled.h1`
   font-size: 20px;
@@ -55,7 +56,9 @@ const ConceptSection = () => {
   return (
     <Section>
       <LeftContainer>
-        <Title>Notre concept</Title>
+        <Title>
+          Notre <span style={{ color: "#006281" }}>concept</span>
+        </Title>
         <SubTitle>
           Tous les mois, recevez une box avec la bière du mois, son histoire, la
           présentation du producteur mais aussi des petits snacks qui vont

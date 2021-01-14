@@ -1,6 +1,4 @@
-import React, { useContext, useEffect } from "react"
-import { MixpanelContext } from "../../tracking"
-import { Link } from "gatsby"
+import React from "react"
 import styled from "styled-components"
 
 import ImgCard from "./ImgCard"
@@ -15,6 +13,7 @@ const Section = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   padding: 40px 40px;
 `
 const CardContainer = styled.div`
@@ -24,6 +23,7 @@ const CardContainer = styled.div`
 const Title = styled.h1`
   font-size: 60px;
   color: #000;
+  font-family: "Anton";
 `
 const SubTitle = styled.p`
   font-size: 20px;
@@ -34,20 +34,11 @@ const SubTitle = styled.p`
 `
 
 const ValuesSection = () => {
-  const mixpanel = useContext(MixpanelContext)
-
-  // Runs once, after page load
-  useEffect(() => {
-    mixpanel.track("Load homepage")
-  }, [mixpanel])
-
-  const something = () => {
-    mixpanel.track("Click button")
-  }
-
   return (
     <Section>
-      <Title>Nos valeurs</Title>
+      <Title>
+        Nos <span style={{ color: "#006281" }}>valeurs</span>
+      </Title>
       <CardContainer>
         <ImgCard
           imgSrc={Caroussel1}

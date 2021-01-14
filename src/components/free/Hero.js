@@ -3,8 +3,7 @@ import { MixpanelContext } from "../../tracking"
 import { Link } from "gatsby"
 import styled from "styled-components"
 
-import background from "../../images/img1.jpg"
-import Cta from "./Cta"
+import background from "../../images/img6.jpg"
 
 const Section = styled.section`
   height: 100vh;
@@ -21,16 +20,14 @@ const Section = styled.section`
 const Title = styled.h1`
   font-size: 100px;
   color: #fff;
-  text-transform: uppercase;
   font-family: "Anton";
-  margin-bottom: 20px;
 `
 const SubTitle = styled.h2`
   font-size: 20px;
   font-weight: normal;
   color: #fff;
   margin: 20px 0 50px 0;
-  max-width: 600px;
+  max-width: 450px;
   line-height: 25px;
 `
 
@@ -48,12 +45,11 @@ const Hero = () => {
 
   return (
     <Section>
-      <Title>Biru</Title>
+      <Title>Merci</Title>
       <SubTitle>
-        Voyagez depuis votre canapé en découvrant tous les mois de nouvelles
-        bières, authentiques et artisanales.
+        Vous êtes désormais un amateur de bière Biru. Prêts à découvrir la bière
+        du mois ?
       </SubTitle>
-      <Cta />
     </Section>
   )
 }
