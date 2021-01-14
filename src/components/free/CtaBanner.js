@@ -37,14 +37,14 @@ const CtaBanner = () => {
   return (
     <Section>
       <Title>
-        Et si vous receviez une nouvelle bière à tester tous les mois pour
+        Et si vous receviez un pack entier de bière à tester tous les mois pour
         15€/mois ? 🍺
       </Title>
       <SubTitle>
         Contient : un pack de 6 bières, un décapsuleur inédit, des snacks et de
         la documentation sur la bière du mois.
       </SubTitle>
-      <CtaPurchase />
+      {/* <CtaPurchase /> */}
       <Checkout />
     </Section>
   )

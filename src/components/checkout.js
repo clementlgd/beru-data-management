@@ -1,15 +1,20 @@
-import React, { useState } from "react"
+import React, { useContext, useEffect, useState } from "react"
 import { loadStripe } from "@stripe/stripe-js"
+import { MixpanelContext } from "../tracking"
 
 const buttonStyles = {
-  fontSize: "13px",
   textAlign: "center",
-  color: "#000",
-  padding: "12px 60px",
-  boxShadow: "2px 5px 10px rgba(0,0,0,.1)",
-  backgroundColor: "rgb(255, 178, 56)",
-  borderRadius: "6px",
-  letterSpacing: "1.5px",
+  background: "#fff",
+  color: "#006281",
+  textDdecoration: "none",
+  padding: "15px 20px",
+  width: "fit-content",
+  fontFamily: "open-sans",
+  borderRadius: "10px",
+  fontWeight: "bold",
+  transition: "all 0.3s",
+  border: "none",
+  cursor: "pointer",
 }
 
 const buttonDisabledStyles = {
@@ -29,6 +34,7 @@ const getStripe = () => {
 
 const Checkout = () => {
   const [loading, setLoading] = useState(false)
+  const mixpanel = useContext(MixpanelContext)
 
   const redirectToCheckout = async event => {
     event.preventDefault()
@@ -54,7 +60,9 @@ const Checkout = () => {
       style={
         loading ? { ...buttonStyles, ...buttonDisabledStyles } : buttonStyles
       }
-      onClick={redirectToCheckout}
+      onClick={
+        (() => mixpanel.track("cta purchase button"), redirectToCheckout)
+      }
     >
       Je m'abonne à Biru
     </button>
