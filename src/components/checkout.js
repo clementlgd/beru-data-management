@@ -43,7 +43,7 @@ const Checkout = () => {
     const stripe = await getStripe()
     const { error } = await stripe.redirectToCheckout({
       mode: "payment",
-      lineItems: [{ price: "price_1I9Wd1DbCOOQnOnrCLnf18Qs", quantity: 1 }],
+      lineItems: [{ price: "price_1I9nqnDbCOOQnOnrmfmvn5bw", quantity: 1 }], //old: "price_1I9Wd1DbCOOQnOnrCLnf18Qs"
       successUrl: `${window.location.origin}/successPayment/`,
       cancelUrl: `http://localhost:8000/`,
     })
@@ -60,9 +60,8 @@ const Checkout = () => {
       style={
         loading ? { ...buttonStyles, ...buttonDisabledStyles } : buttonStyles
       }
-      onClick={
-        (() => mixpanel.track("cta purchase button"), redirectToCheckout)
-      }
+      onClick={() => mixpanel.track("cta purchase button")}
+      onClick={redirectToCheckout}
     >
       Je m'abonne à Biru
     </button>
