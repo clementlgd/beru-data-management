@@ -37,6 +37,7 @@ const Checkout = () => {
   const mixpanel = useContext(MixpanelContext)
 
   const redirectToCheckout = async event => {
+    mixpanel.track("cta stripe purchase button")
     event.preventDefault()
     setLoading(true)
 
@@ -60,12 +61,7 @@ const Checkout = () => {
       style={
         loading ? { ...buttonStyles, ...buttonDisabledStyles } : buttonStyles
       }
-      onClick={() => {
-        mixpanel.track("cta purchase button")
-        {
-          redirectToCheckout
-        }
-      }}
+      onClick={redirectToCheckout}
     >
       Je m'abonne à Biru
     </button>
