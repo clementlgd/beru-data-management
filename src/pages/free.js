@@ -18,7 +18,7 @@ const SecondPage = () => {
 
   return (
     <Layout>
-      <SEO title="Page two" />
+      <SEO title="Free page" />
       <Hero />
       <BeerSection />
       <FeaturesSection />
