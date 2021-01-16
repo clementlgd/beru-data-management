@@ -44,7 +44,7 @@ const CtaBanner = () => {
         Contient : un pack de 6 bières, un décapsuleur inédit, des snacks et de
         la documentation sur la bière du mois.
       </SubTitle>
-      {/* <CtaPurchase /> */}
+      <CtaPurchase />
       <Checkout />
     </Section>
   )

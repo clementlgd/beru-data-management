@@ -25,11 +25,11 @@ const CtaPurchase = () => {
 
   return (
     <Button
-      href="https://u6f60w1xnsf.typeform.com/to/MzjOpujo"
+      href=""
       target="_blank"
-      onClick={() => mixpanel.track("cta purchase button")}
+      onClick={() => mixpanel.track("cta test button")}
     >
-      Je m’abonne à Biru
+      Test
     </Button>
   )
 }
