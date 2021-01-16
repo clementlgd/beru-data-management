@@ -60,8 +60,12 @@ const Checkout = () => {
       style={
         loading ? { ...buttonStyles, ...buttonDisabledStyles } : buttonStyles
       }
-      onClick={() => mixpanel.track("cta purchase button")}
-      onClick={redirectToCheckout}
+      onClick={() => {
+        mixpanel.track("cta purchase button")
+        {
+          redirectToCheckout
+        }
+      }}
     >
       Je m'abonne à Biru
     </button>
